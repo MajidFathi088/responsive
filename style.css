@@ -1,0 +1,55 @@
+body{
+    margin: 0px;
+    font-size: 16px;
+}
+.main-container{
+    width: 100%;
+    max-width: 1800px;     /*no longer when screen is wider than 1800px */
+    margin: 0px auto;      /*fold in the middle*/
+    font-size: 1em;   
+}
+header , footer{
+    background-color: rgba(0, 0, 0, .8);
+    color: white;
+    padding: 20px;
+}
+header nav{
+    display: flex;
+}
+header nav span{
+    margin-right:15px ;
+    border-radius:10px ;
+    border:2px solid white ;
+    padding:5px 10px ;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+main .content{
+    padding: 20px;
+}
+main .menu{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 15px;
+}
+main .menu span{
+    border-bottom: 1px solid #444;
+    margin-bottom: 8px;
+}
+main .content .cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+main .content .cards .caed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgray;
+    padding: 50px 0px;
+    margin:10px ;
+    color: white;
+    font-size: 2em;
+}
